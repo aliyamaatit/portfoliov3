@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .header {
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url('image/hack2.jpg') no-repeat center/cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+  }
+  
+  nav img {
+    width: 120px;
+  }
+  
+  .nav-links ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-links ul li a:hover {
+    color: #A3CA9D;
+  }
+  
+  .text-box {
+    text-align: center;
+    margin: auto 0;
+    padding: 0 20px;
+  }
+  
+  .text-box h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .text-box p {
+    font-size: 1.2rem;
+  }
+  
+  .interet-section {
+    padding: 40px 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .interet-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .interet-box img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .interet-box h2 {
+    margin-bottom: 10px;
+    color: #2C3E50;
+  }
+  
+  .footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .footer img {
+    width: 30px;
+    margin: 0 5px;
+  }
+  
+  .footer a {
+    color: #A3CA9D;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer a:hover {
+    color: #89b885;
+  }
+  
