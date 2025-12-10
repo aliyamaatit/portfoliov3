@@ -41,13 +41,12 @@
     <section class="contact-section">
       <h2>Envoyer un message</h2>
 
-      <!-- FormSubmit -->
-      <form action="https://formsubmit.co/aliya.maatit@outlook.com" method="POST">
-        <!-- Désactiver le captcha FormSubmit -->
-        <input type="hidden" name="_captcha" value="false">
-        <!-- Page de redirection après envoi (tu peux mettre une autre URL) -->
-        <input type="hidden" name="_next" value="https://aliyamaatit.github.io/portfolio/merci.html">
+      <!-- Formspree -->
+      <form action="https://formspree.io/f/xnneglyd" method="POST">
+        <!-- Sujet du mail -->
         <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio">
+        <!-- Redirection après envoi (tu peux changer l’URL) -->
+        <input type="hidden" name="_next" value="https://aliyamaatit.github.io/portfolio/merci.html">
 
         <div class="form-group">
           <label for="prenom">Prénom</label>
