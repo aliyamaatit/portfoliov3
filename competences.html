@@ -23,6 +23,7 @@
                     <li><a href="formations.html">Formation</a></li>
                     <li><a href="competences.html">Compétences</a></li>
                     <li><a href="projet.html">Projets</a></li>
+                    <li><a href="experience_pro.html">Expérience Pro</a></li>
                     <li><a href="interets.html">Centre d'intérêts</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -35,70 +36,129 @@
 
     <!-- Section des compétences -->
     <section class="competences">
-        <p>Voici un aperçu de mes compétences techniques et humaines développées au cours de mon BUT :</p>
+        <p>Voici un aperçu de mes compétences techniques et humaines développées au cours de mon BUT et de mes expériences professionnelles :</p>
         <br>
-        <div class="grid-competences">
-            <div class="competence-box">
+
+        <!-- TITRE TECH -->
+        <h2 class="soft-title">Compétences techniques</h2>
+
+        <!-- LIGNE 1 : 3 compétences techniques -->
+        <div class="grid-competences technical">
+            <!-- Admin réseaux & Internet -->
+            <div class="competence-box" id="admin">
                 <img src="image/adminreseauxetinternet.jpeg" alt="Administration réseaux">
                 <h3>Administrer les réseaux et l’Internet</h3>
-                <p>Configurer et maintenir les infrastructures réseaux et systèmes, assurer la gestion des services réseaux et de la sécurité des infrastructures.</p>
+                <p>Configurer, exploiter et maintenir des infrastructures réseaux et systèmes, en garantissant la disponibilité et la performance des services.</p>
                 <ul>
-                    <li>Réseaux (protocoles IP, VLAN, VPN)</li>
+                    <li>Réseaux (adressage IP, routage, VLAN, VPN)</li>
+                    <li>Réseaux sans fil (Wi-Fi, bases de sécurisation)</li>
                     <li>Équipements Cisco (routeurs, switches)</li>
-                    <li>Cybersécurité : protection des systèmes</li>
+                    <li>Services réseaux : DHCP, DNS, NAT/PAT</li>
+                    <li>Travaux pratiques de radio logicielle avec GNU Radio et Adalm-Pluto : prise en main, traitement du signal, transmission numérique (modulation d’amplitude, émission/réception, démodulation) et formats avancés (QAM, multiplexage)</li>
+                    <li>Organisation et suivi des projets réseau avec GitHub, Trello et méthodes Agiles</li>
                 </ul>
             </div>
 
+            <!-- Connecter entreprises & usagers -->
             <div class="competence-box">
                 <img src="image/connecterentrpriseusager.jpg" alt="Connexion entreprise">
                 <h3>Connecter les entreprises et les usagers</h3>
-                <p>Gérer la connectivité d'entreprise et la communication entre les usagers.</p>
+                <p>Assurer la connectivité des utilisateurs et des sites, tout en garantissant une communication fluide et fiable.</p>
                 <ul>
-                    <li>VPN, réseaux sans fil</li>
+                    <li>VPN, réseaux sans fil (Wi-Fi entreprise, invités)</li>
                     <li>Technologies IP, SIP, VoIP</li>
-                    <li>Liaisons WAN, QoS</li>
+                    <li>Liaisons WAN, QoS, interconnexion de sites</li>
+                    <li>Gestion de projets de connectivité en mode Agile avec GitHub (dépôts de config, documentation) et Trello (suivi des tâches)</li>
                 </ul>
             </div>
 
-            <div class="competence-box">
+            <!-- Créer outils & applis R&T -->
+            <div class="competence-box" id="dev">
                 <img src="image/automatisayion.jpg" alt="Automatisation réseau">
                 <h3>Créer des outils et applications R&T</h3>
-                <p>Développer des solutions logicielles pour répondre aux besoins réseau.</p>
+                <p>Développer des scripts et outils adaptés aux besoins réseaux et systèmes pour automatiser, superviser et faciliter l’administration.</p>
                 <ul>
                     <li>Scripts d’automatisation réseau</li>
-                    <li>Applications de gestion de réseau</li>
-                    <li>Outils de monitoring</li>
+                    <li>Outils de gestion et de supervision</li>
+                    <li>Notions de développement pour l’IT (Python, SQL…)</li>
+                    <li>Versionnage et collaboration avec GitHub (branches, commits, pull), gestion Agile/Kanban avec Trello</li>
                 </ul>
             </div>
+        </div>
 
-            <div class="competence-box">
-                <img src="image/cyber.webp" alt="Cybersécurité">
-                <h3>Cybersécurité & Pentesting</h3>
-                <p>Protéger les données, les systèmes et les réseaux grâce à des tests et audits de sécurité.</p>
+        <!-- LIGNE 2 : 2 compétences techniques centrées -->
+        <div class="grid-competences technical center-row">
+            <!-- Administrer un SI sécurisé -->
+            <div class="competence-box" id="cyber">
+                <img src="image/cyber.webp" alt="Système d'information sécurisé">
+                <h3>Administrer un système d’information sécurisé</h3>
+                <p>Mettre en place et maintenir un environnement informatique sécurisé, en tenant compte des risques, des menaces et des bonnes pratiques.</p>
                 <ul>
-                    <li>Pentesting d’applications et de réseaux</li>
-                    <li>Audits de sécurité</li>
-                    <li>Réponse aux incidents</li>
+                    <li>Compréhension du rôle d’un SOC et d’un NOC (surveillance, escalade, continuité de service)</li>
+                    <li>Malwares : identification des comportements suspects et mise en place de contre-mesures</li>
+                    <li>VPN : accès distant sécurisé pour les utilisateurs et sites</li>
+                    <li>Pare-feu (firewall) : règles, filtrage, NAT et segmentation</li>
+                    <li>Segmentation réseau via VLAN pour limiter la surface d’attaque</li>
+                    <li>Protection des endpoints : mises à jour, antivirus, durcissement postes</li>
                 </ul>
             </div>
 
+            <!-- Surveiller un SI -->
             <div class="competence-box">
+                <img src="image/sureveiller.png" alt="Surveiller un SI">
+                <h3>Surveiller un système d’information</h3>
+                <p>Assurer un suivi régulier de l’état du SI afin de détecter rapidement les incidents, les anomalies de sécurité et les dégradations de service.</p>
+                <ul>
+                    <li>Analyse de journaux (logs systèmes, sécurité, réseau, antivirus)</li>
+                    <li>Utilisation d’outils de supervision, tableaux de bord et solutions de type SIEM</li>
+                    <li>Initiation à Wazuh (collecte, corrélation d’événements de sécurité, alertes)</li>
+                    <li>Suivi et qualification des alertes, escalade si nécessaire</li>
+                    <li>Contribution à des campagnes de sensibilisation (phishing, MFA, bonnes pratiques)</li>
+                    <li>Prise en compte des retours utilisateurs pour améliorer la sécurité opérationnelle</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- TITRE SOFT SKILLS -->
+        <h2 class="soft-title">Compétences humaines et linguistiques</h2>
+
+        <!-- LIGNE 3 : 2 compétences soft en bas -->
+        <div class="grid-competences soft">
+            <!-- Langues -->
+            <div class="competence-box">
+                <img src="image/langue.webp" alt="Langue">
                 <h3>Langues</h3>
-                <p>Parler plusieurs langues me permet de travailler dans un environnement multiculturel, de comprendre différentes cultures et de collaborer avec des profils variés. J’aime rencontrer de nouvelles personnes et échanger autour de visions différentes. Je souhaite également travailler un jour dans un pays anglophone pour découvrir d’autres modes de vie, façons de travailler et enrichir ma culture personnelle.</p>
+                <p>
+                    Parler plusieurs langues me permet d’évoluer dans un environnement multiculturel, de comprendre différents points de vue
+                    et de collaborer avec des profils variés.  
+                    Pendant mon stage, j’ai également été amenée à échanger avec des collaborateurs et parfois des prestataires en anglais
+                    (mails, documentation, échanges informels), ce qui m’a permis de renforcer mon aisance professionnelle à l’oral comme à l’écrit.
+                </p>
                 <ul>
-                    <li>Français : Langue maternelle</li>
-                    <li>Anglais : Courant (C1)</li>
-                    <li>Allemand : Intermédiaire (B2)</li>
+                    <li>Français : langue maternelle</li>
+                    <li>Anglais : courant (C1) – usage en contexte académique et professionnel</li>
+                    <li>Allemand : intermédiaire (B2) – bases solides pour la compréhension et l’échange</li>
                 </ul>
             </div>
 
-            <div class="competence-box">
+            <!-- Compétences relationnelles -->
+            <div class="competence-box" id="relationnel">
+                <img src="image/relation.jpg" alt="Compétences relationnelles">
                 <h3>Compétences relationnelles</h3>
-                <p>Lors de mes projets en groupe à l'IUT ou en entreprise, je suis toujours investie, à l'écoute des idées de chacun. J’aime organiser les tâches, clarifier les objectifs et faciliter la communication au sein de l'équipe, surtout dans les moments de stress ou d’échéance rapprochée.</p>
+                <p>
+                    Lors de mes projets en groupe à l’IUT comme en entreprise, je suis investie, à l’écoute des idées de chacun et attentive à la cohésion
+                    de l’équipe. J’aime organiser les tâches, clarifier les objectifs et garder une vision d’ensemble, surtout dans les périodes de forte charge.
+                </p>
+                <p>
+                    Pendant mon stage, je devais également communiquer des informations importantes liées à la cybersécurité : campagnes de
+                    sensibilisation au phishing, procédures MFA, bonnes pratiques à adopter, aide aux utilisateurs sur différents sites (à distance et sur place).  
+                    J’ai aussi été en contact avec une entreprise externe pour organiser la destruction sécurisée de matériel informatique, ce qui m’a permis de
+                    développer ma capacité à échanger avec des interlocuteurs variés (utilisateurs, managers, prestataires).
+                </p>
                 <ul>
-                    <li>Travail en équipe</li>
-                    <li>Communication professionnelle</li>
-                    <li>Gestion du temps et des priorités</li>
+                    <li>Travail en équipe et coordination</li>
+                    <li>Communication professionnelle (utilisateurs, encadrants, prestataires)</li>
+                    <li>Gestion du temps et des priorités, surtout en contexte de support</li>
                 </ul>
             </div>
         </div>
@@ -111,6 +171,9 @@
         <div class="social-links">
             <a href="https://www.linkedin.com/in/aliya-maatit-a68162297" target="_blank">
                 <img src="image/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/aliyamaatit" target="_blank">
+                <img src="image/git.svg" alt="GitHub">
             </a>
         </div>
         <p>&copy; 2025 Aliya Maatit | Étudiante en Réseaux et Télécommunications</p>
