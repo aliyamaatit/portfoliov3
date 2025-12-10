@@ -43,6 +43,7 @@ nav img:hover {
     list-style: none;
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 
 .nav-links ul li {
@@ -62,6 +63,33 @@ nav img:hover {
 .nav-links ul li a:hover {
     color: #A3CA9D;
     background-color: rgba(163, 202, 157, 0.2);
+}
+
+/* Icône GitHub dans la NAV */
+.github-icon {
+    padding: 6px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+
+.github-icon img {
+    width: 26px;
+    filter: brightness(0) invert(1); /* rend l'icône blanche si elle est noire à la base */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.github-icon:hover {
+    background: rgba(163, 202, 157, 0.5);
+    transform: scale(1.05);
+}
+
+.github-icon img:hover {
+    transform: scale(1.1);
+    opacity: 0.85;
 }
 
 .text-box {
@@ -188,13 +216,14 @@ nav img:hover {
 
 /* Responsivité */
 @media (max-width: 768px) {
-    .nav-links ul {
+    nav {
         flex-direction: column;
-        align-items: center;
+        gap: 15px;
     }
 
-    .nav-links ul li {
-        margin-bottom: 10px;
+    .nav-links ul {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .text-box h1 {
