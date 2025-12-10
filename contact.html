@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  <!-- En-tête -->
   <header class="header">
     <nav>
       <a href="index.html">
@@ -21,6 +22,7 @@
           <li><a href="formations.html">Formation</a></li>
           <li><a href="competences.html">Compétences</a></li>
           <li><a href="projet.html">Projets</a></li>
+          <li><a href="experience_pro.html">Expérience Pro</a></li>
           <li><a href="interets.html">Centre d'intérêts</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -28,42 +30,60 @@
     </nav>
     <div class="text-box">
       <h1>Contactez-moi</h1>
-      <p>Email : <a href="mailto:aliya.maatit@outlook.com">aliya.maatit@outlook.com</a><br>
-        Téléphone : 06 03 33 14 62</p>
+      <p>
+        Vous pouvez me joindre directement par email ou via ce formulaire.<br>
+        Email : <a href="mailto:aliya.maatit@outlook.com">aliya.maatit@outlook.com</a>
+      </p>
     </div>
   </header>
 
   <main>
     <section class="contact-section">
       <h2>Envoyer un message</h2>
-      <form action="mailto:aliya.maatit@outlook.com" method="POST" enctype="text/plain">
+
+      <!-- FormSubmit -->
+      <form action="https://formsubmit.co/aliya.maatit@outlook.com" method="POST">
+        <!-- Désactiver le captcha FormSubmit -->
+        <input type="hidden" name="_captcha" value="false">
+        <!-- Page de redirection après envoi (tu peux mettre une autre URL) -->
+        <input type="hidden" name="_next" value="https://aliyamaatit.github.io/portfolio/merci.html">
+        <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio">
+
         <div class="form-group">
           <label for="prenom">Prénom</label>
-          <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required />
+          <input type="text" id="prenom" name="Prénom" placeholder="Votre prénom" required />
         </div>
+
         <div class="form-group">
           <label for="email">Adresse email</label>
-          <input type="email" id="email" name="email" placeholder="exemple@mail.com" required />
+          <input type="email" id="email" name="Email" placeholder="exemple@mail.com" required />
         </div>
+
         <div class="form-group">
           <label for="telephone">Téléphone</label>
-          <input type="tel" id="telephone" name="telephone" placeholder="06 12 34 56 78" />
+          <input type="tel" id="telephone" name="Téléphone" placeholder="06 12 34 56 78" />
         </div>
+
         <div class="form-group">
           <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Votre message ici..." required></textarea>
+          <textarea id="message" name="Message" rows="5" placeholder="Votre message ici..." required></textarea>
         </div>
+
         <button type="submit">Envoyer</button>
       </form>
     </section>
   </main>
 
+  <!-- Pied de page -->
   <footer class="footer">
     <h3>Aliya Maatit</h3>
     <a href="mailto:aliya.maatit@outlook.com">aliya.maatit@outlook.com</a>
     <div class="social-links">
       <a href="https://www.linkedin.com/in/aliya-maatit-a68162297" target="_blank">
         <img src="image/linkedin.png" alt="LinkedIn" />
+      </a>
+      <a href="https://github.com/aliyamaatit" target="_blank">
+        <img src="image/git.svg" alt="GitHub" />
       </a>
     </div>
     <p>&copy; 2025 Aliya Maatit | Étudiante en Réseaux et Télécommunications</p>
