@@ -10,9 +10,12 @@
 </head>
 
 <body>
+  <!-- En-tête -->
   <header class="header">
     <nav>
-      <a href="index.html"><img src="image/logo.png" alt="Logo Aliya Maatit"></a>
+      <a href="index.html">
+        <img src="image/logo.png" alt="Logo Aliya Maatit">
+      </a>
       <div class="nav-links">
         <ul>
           <li><a href="index.html">Accueil</a></li>
@@ -20,6 +23,7 @@
           <li><a href="formations.html">Formation</a></li>
           <li><a href="competences.html">Compétences</a></li>
           <li><a href="projet.html">Projets</a></li>
+          <li><a href="experience_pro.html">Expérience Pro</a></li>
           <li><a href="interets.html">Centre d'intérêts</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -31,30 +35,54 @@
     </div>
   </header>
 
+  <!-- Section projets -->
   <section class="projets">
     <div class="grid-projets">
 
-    <div class="project-card">
-  <h3>Sécurisation complète d'une entreprise fictive</h3>
-  <h4>SAE4.04 – Mars/Avril 2025</h4>
-  <p>Travail réalisé sur l’entreprise fictive RecycloTech comprenant l’élaboration d’une PSSI, la création d’une procédure de patch management, le durcissement des systèmes via AppLocker et la gestion d'une crise cyber simulée.</p>
-  <ul>
-    <li>Rédaction et mise en place d'une PSSI complète</li>
-    <li>Procédure de mise à jour et gestion de patchs pour serveurs</li>
-    <li>Durcissement des postes avec AppLocker</li>
-    <li>Gestion de crise : analyse, communication et remédiation</li>
-  </ul>
-  <p><strong>Compétences :</strong> 
-    <a href="competences.html#cyber">Cybersécurité</a> · 
-    <a href="competences.html#cyber">Politique SSI (PSSI)</a> · 
-    <a href="competences.html#cyber">AppLocker</a> · 
-    <a href="competences.html#admin">Windows Server</a> · 
-    <a href="competences.html#cyber">Gestion de crise</a> · 
-    <a href="competences.html#relationnel">Analyse de risques</a>
-  </p>
-  <a class="download" href="SAE44_Livrable_MAATIT_PONNU_G2 (1).pdf" download>Télécharger le livrable</a>
-</div>
+      <!-- SAE5.03 -->
+      <div class="project-card">
+        <h3>Assurer la sécurisation et la supervision avancées d'un SI</h3>
+        <h4>SAE5.03 – Novembre 2025 à Janvier 2026</h4>
+        <p>
+          Projet de cybersécurité avancée autour d’un système d’information complet : mise en place d’un pare-feu,
+          simulation d’attaques réseau (ARP spoofing, Man-in-the-Middle, écoute VoIP) et déploiement d’un SIEM
+          Wazuh pour superviser et analyser les incidents de sécurité.
+        </p>
+        <ul>
+          <li>Configuration d’un routeur pare-feu sous Linux (iptables, NAT, règles de filtrage).</li>
+          <li>Mise en œuvre d’attaques ARP spoofing et MITM sur une infrastructure simulée, analyse du trafic.</li>
+          <li>Scénario d’eavesdropping sur une infrastructure VoIP (Asterisk, softphones, Wireshark, dsniff).</li>
+          <li>Installation et configuration du SIEM Wazuh, déploiement d’agents, analyse d’alertes et de vulnérabilités.</li>
+        </ul>
+        <p><strong>Compétences :</strong>
+          <a href="competences.html#cyber">Administrer un SI sécurisé</a> ·
+          <a href="competences.html#cyber">Surveiller un SI (Wazuh / SIEM)</a> ·
+          <a href="competences.html#admin">Pare-feu & routage</a>
+        </p>
+      </div>
 
+      <!-- SAE5.01 -->
+      <div class="project-card">
+        <h3>Concevoir et déployer un Wi-Fi d’entreprise multi-sites sécurisé</h3>
+        <h4>SAE5.01 – Novembre 2025 à Janvier 2026</h4>
+        <p>
+          Projet de conception et déploiement d’une architecture Wi-Fi d’entreprise pour une chaîne de salles de sport :
+          SSID entreprise en WPA2-Enterprise, réseau invités isolé, supervision centralisée Wazuh et durcissement complet
+          du serveur Linux.
+        </p>
+        <ul>
+          <li>Déploiement d’un Wi-Fi entreprise en WPA2-Enterprise (PEAP-MSCHAPv2) avec FreeRADIUS et MariaDB.</li>
+          <li>Mise en place d’un SSID invité isolé via routeur 4G TL-MR100, analyse de son mécanisme d’isolement.</li>
+          <li>Supervision de la sécurité avec Wazuh : collecte de journaux, règles, tableaux de bord et intégration syslog.</li>
+          <li>Linux Hardening : SSH par clé, pare-feu, services, permissions, journalisation, analyse des ports ouverts.</li>
+          <li>Analyse de risques EBIOS simplifiée et gestion de projet complète (Gantt, journal de bord, dépôt GitLab).</li>
+        </ul>
+        <p><strong>Compétences :</strong>
+          <a href="competences.html#admin">Administrer les réseaux et l’Internet</a> ·
+          <a href="competences.html#cyber">Administrer un SI sécurisé</a> ·
+          <a href="competences.html#dev">Outils R&T (PHP, scripts, GitLab)</a>
+        </p>
+      </div>
 
       <div class="project-card">
         <h3>Construire un réseau informatique complet</h3>
@@ -65,7 +93,12 @@
           <li>DHCP pour attribution IP automatique</li>
           <li>NAT/PAT pour accès Internet</li>
         </ul>
-        <p><strong>Compétences :</strong> <a href="competences.html#admin">Cisco IOS</a> · <a href="competences.html#admin">NAT/PAT</a> · <a href="competences.html#admin">Routage</a> · <a href="competences.html#admin">Linux</a></p>
+        <p><strong>Compétences :</strong>
+          <a href="competences.html#admin">Cisco IOS</a> ·
+          <a href="competences.html#admin">NAT/PAT</a> ·
+          <a href="competences.html#admin">Routage</a> ·
+          <a href="competences.html#admin">Linux</a>
+        </p>
         <a class="download" href="SAE21.pptx" download>Télécharger le compte rendu</a>
       </div>
 
@@ -78,7 +111,11 @@
           <li>Détection via analyse ARP (Python)</li>
           <li>Blocage MAC suspectes</li>
         </ul>
-        <p><strong>Compétences :</strong> <a href="competences.html#cyber">MITM</a> · <a href="competences.html#cyber">Scapy</a> · <a href="competences.html#cyber">Python</a></p>
+        <p><strong>Compétences :</strong>
+          <a href="competences.html#cyber">MITM</a> ·
+          <a href="competences.html#cyber">Scapy</a> ·
+          <a href="competences.html#cyber">Python</a>
+        </p>
         <a class="download" href="SAE24.pdf" download>Télécharger le compte rendu</a>
       </div>
 
@@ -91,67 +128,56 @@
           <li>Utilisation d’oscilloscope, analyseur de spectre</li>
           <li>Mesures sur talkies-walkies</li>
         </ul>
-        <p><strong>Compétences :</strong> <a href="competences.html#signal">Analyse spectrale</a> · <a href="competences.html#signal">AM/FM</a> · <a href="competences.html#signal">Signal analogique</a></p>
+        <p><strong>Compétences :</strong>
+          <a href="competences.html#signal">Analyse spectrale</a> ·
+          <a href="competences.html#signal">AM/FM</a> ·
+          <a href="competences.html#signal">Signal analogique</a>
+        </p>
         <a class="download" href="SAE22.pdf" download>Télécharger le compte rendu</a>
       </div>
 
       <div class="project-card">
         <h3>Traitement des données et génération de site web</h3>
-        <h4>Février/Mars 2024</h4>
+        <h4>SAE15 – Février/Mars 2024</h4>
         <p>Analyse de données CSV sur les interventions des pompiers avec visualisation graphique en Python.</p>
         <ul>
           <li>Top 10 incidents par département</li>
           <li>Requêtes, graphiques, recherche</li>
         </ul>
-        <p><strong>Compétences :</strong> <a href="competences.html#dev">Python</a> · <a href="competences.html#dev">CSV</a> · <a href="competences.html#dev">Matplotlib</a></p>
-      </div>
-
-      <div class="project-card">
-        <h3>Routage statique sous Linux</h3>
-        <h4>Décembre 2023 – Janvier 2024</h4>
-        <p>Réseau simulé avec Marionnet, configuration manuelle des IP, DNS, NFS, SSH.</p>
-        <p><strong>Compétences :</strong> <a href="competences.html#admin">Linux</a> · <a href="competences.html#admin">DHCP</a> · <a href="competences.html#admin">DNS</a></p>
+        <p><strong>Compétences :</strong>
+          <a href="competences.html#dev">Python</a> ·
+          <a href="competences.html#dev">CSV</a> ·
+          <a href="competences.html#dev">Matplotlib</a>
+        </p>
+        <a class="download" href="Interventions_SAE15.html" download>Télécharger le compte rendu</a>
       </div>
 
       <div class="project-card">
         <h3>Création d’une base de données SQL</h3>
         <h4>SAE2.03 – Janvier/Mars 2024</h4>
         <p>Modélisation UML, requêtes avancées, gestion clients/stocks/fournisseurs.</p>
-        <p><strong>Compétences :</strong> <a href="competences.html#dev">SQL</a> · <a href="competences.html#dev">UML</a></p>
+        <p><strong>Compétences :</strong>
+          <a href="competences.html#dev">SQL</a> ·
+          <a href="competences.html#dev">UML</a>
+        </p>
         <a class="download" href="SAE23.pdf" download>Télécharger le compte rendu</a>
-      </div>
-
-      <div class="project-card">
-        <h3>Vidéo de sensibilisation à la cybersécurité</h3>
-        <h4>Novembre/Décembre 2023</h4>
-        <p>Réalisation d’une vidéo pédagogique sur les risques en ligne, conseils de protection.</p>
-        <p><strong>Compétences :</strong> <a href="competences.html#cyber">Cybersécurité</a> · <a href="competences.html#relationnel">Communication</a></p>
       </div>
 
       <div class="project-card">
         <h3>Création de mon Portfolio Web</h3>
         <h4>Septembre/Décembre 2023</h4>
         <p>Site personnel en HTML/CSS avec présentation de mes projets, compétences et formations.</p>
-        <p><strong>Compétences :</strong> <a href="competences.html#dev">HTML</a> · <a href="competences.html#dev">CSS</a> · <a href="competences.html#relationnel">UI/UX</a></p>
-      </div>
-
-      <div class="project-card">
-        <h3>Conception d’un jeu vidéo en C++</h3>
-        <h4>Janvier – Mars 2023</h4>
-        <p>Jeu de stratégie avec interface, mécanique de jeu, IA basique. Réalisé en groupe.</p>
-        <p><strong>Compétences :</strong> <a href="competences.html#dev">C++</a> · <a href="competences.html#relationnel">Travail en équipe</a></p>
-      </div>
-
-      <div class="project-card">
-        <h3>Base de données SQL – Projet Franprix</h3>
-        <h4>Octobre 2022 – Janvier 2023</h4>
-        <p>Base SQL Server pour gestion de stock. Requêtes, modélisation, méthode Agile.</p>
-        <p><strong>Compétences :</strong> <a href="competences.html#dev">SQL</a> · <a href="competences.html#dev">Agile</a> · <a href="competences.html#dev">Oracle</a></p>
+        <p><strong>Compétences :</strong>
+          <a href="competences.html#dev">HTML</a> ·
+          <a href="competences.html#dev">CSS</a> ·
+          <a href="competences.html#relationnel">UI/UX</a>
+        </p>
       </div>
 
     </div>
   </section>
 
+  <!-- Pied de page -->
   <footer class="footer">
     <h3>Aliya Maatit</h3>
     <a href="mailto:aliya.maatit@outlook.com">aliya.maatit@outlook.com</a>
@@ -159,11 +185,11 @@
       <a href="https://www.linkedin.com/in/aliya-maatit-a68162297" target="_blank">
         <img src="image/linkedin.png" alt="LinkedIn" />
       </a>
+      <a href="https://github.com/aliyamaatit" target="_blank">
+        <img src="image/git.svg" alt="GitHub" />
+      </a>
     </div>
     <p>&copy; 2025 Aliya Maatit | Étudiante en Réseaux et Télécommunications</p>
   </footer>
 </body>
 </html>
-
-
-
