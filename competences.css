@@ -89,6 +89,13 @@ nav img:hover {
     text-align: center;
 }
 
+.soft-title {
+    margin: 2rem 0 1rem 0;
+    font-size: 1.8rem;
+    color: #222;
+    font-weight: 600;
+}
+
 .grid-competences {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -105,7 +112,6 @@ nav img:hover {
     text-align: left;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 100%;
 }
 
@@ -137,6 +143,30 @@ nav img:hover {
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 10px;
+}
+
+/* 🔥 ALIGNEMENT PREMIÈRE LIGNE*/
+.grid-competences.technical .competence-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.grid-competences.technical .competence-box h3 {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.grid-competences.technical .competence-box p:first-of-type {
+    min-height: 120px;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Centrage de la 2e ligne */
+.center-row {
+    justify-items: center;
 }
 
 /* Pied de page */
